@@ -1,34 +1,44 @@
-# 🍽️ Restaurant Ordering App
+# 🍽️ Hot Dog Kings – Restaurant Ordering App
 
-A modern **Restaurant Web Application** built with **Next.js, React.js, and Firebase**. The app allows customers to browse restaurant menus, view food items, and place orders with a fast and responsive interface.
+Hot Dog Kings is a modern restaurant web application built using Next.js, React.js, and Firebase. The application allows customers to browse the restaurant menu, explore food items, and place orders through a fast and responsive interface.
 
-It uses **Firebase as a backend service** for authentication, database, and storage, making it scalable and easy to maintain.
+The platform uses Firebase services for authentication, database, and hosting, making the application scalable, secure, and easy to maintain.
+
+---
+
+## 🌐 Live Application
+
+Landing Page  
+https://hot-dog-kings.web.app/
+
+Main App (Menu)  
+https://hot-dog-kings.web.app/hot-dog-kings/menu
 
 ---
 
 ## 🚀 Features
 
-### Customer Features
+Customer Features
 - Browse restaurant menu
 - View food categories
-- Food item details with price and description
+- Detailed food item information
 - Add items to cart
 - Place orders
-- Fully responsive design
+- Mobile-friendly responsive design
 
-### Admin Features
+Admin Features
 - Manage menu items
-- Add / edit / delete food items
+- Add, update, and delete food items
 - Manage food categories
-- Manage restaurant orders
+- Order management system
 
-### Technical Features
+Technical Features
 - Server-side rendering with Next.js
 - Real-time database using Firebase Firestore
 - Firebase Authentication
-- Image upload using Firebase Storage
-- SEO-friendly pages
-- Modern UI with reusable components
+- Firebase Storage for images
+- SEO-friendly landing pages
+- Fast and modern UI
 
 ---
 
@@ -41,54 +51,53 @@ Frontend
 
 Backend / Cloud
 - Firebase
-- Firestore Database
+- Firebase Firestore
 - Firebase Authentication
+- Firebase Hosting
 - Firebase Storage
 
-Other Tools
+Tools
 - ESLint
 - Git
-- Vercel (Deployment)
+- Firebase CLI
 
 ---
 
 ## 📁 Project Structure
 
-restaurant-app  
+hot-dog-kings  
 ├── app/                # Next.js app router pages  
 ├── components/         # Reusable UI components  
 ├── lib/                # Firebase configuration  
 ├── hooks/              # Custom React hooks  
-├── services/           # Business logic and APIs  
+├── services/           # Business logic  
 ├── public/             # Static assets  
 ├── styles/             # Global styles  
-└── firebase/           # Firebase setup  
+└── firebase/           # Firebase configuration  
 
 ---
 
 ## ⚙️ Installation
 
-### Clone the repository
+Clone the repository
 
-git clone https://github.com/yourusername/restaurant-app.git  
+git clone https://github.com/yourusername/hot-dog-kings.git
 
-cd restaurant-app
+cd hot-dog-kings
 
----
+Install dependencies
 
-### Install dependencies
+npm install
 
-npm install  
-
-or  
+or
 
 yarn install
 
 ---
 
-### Setup environment variables
+## 🔑 Setup Environment Variables
 
-Create a `.env.local` file in the root directory.
+Create a `.env.local` file in the root directory and add your Firebase credentials.
 
 NEXT_PUBLIC_FIREBASE_API_KEY=  
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=  
@@ -97,22 +106,22 @@ NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
 NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=  
 NEXT_PUBLIC_FIREBASE_APP_ID=  
 
-You can obtain these credentials from the **Firebase Console**.
+You can obtain these credentials from the Firebase Console.
 
 ---
 
 ## ▶️ Run the Project
 
-Start development server:
+Start development server
 
 npm run dev
 
-Build for production:
+Build for production
 
 npm run build  
 npm start
 
-Open in browser:
+Open in browser
 
 http://localhost:3000
 
@@ -122,10 +131,11 @@ http://localhost:3000
 
 1. Go to Firebase Console  
 2. Create a new project  
-3. Enable the following services:
-   - Authentication
-   - Firestore Database
-   - Firebase Storage
+3. Enable the following services  
+   - Authentication  
+   - Firestore Database  
+   - Firebase Storage  
+   - Firebase Hosting  
 4. Add a Web App  
 5. Copy the Firebase configuration into `.env.local`
 
@@ -133,17 +143,15 @@ http://localhost:3000
 
 ## 🌍 Deployment
 
-You can deploy this project on:
+The project is deployed using Firebase Hosting.
 
-- Vercel
-- Firebase Hosting
-- AWS
-- DigitalOcean
+Deploy using
 
-Example using Vercel:
+firebase deploy
 
-npm install -g vercel  
-vercel
+Live URL
+
+https://hot-dog-kings.web.app/
 
 ---
 
@@ -153,7 +161,7 @@ vercel
 - Real-time order tracking  
 - Push notifications  
 - Multi-restaurant support  
-- Mobile application (React Native)
+- Mobile application using React Native  
 
 ---
 
