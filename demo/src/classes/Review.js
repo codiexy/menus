@@ -1,0 +1,48 @@
+import { limit, orderBy } from "firebase/firestore";
+import User from "./User";
+import Database from "./Database";
+
+export default class Review extends Database {
+
+    constructor(id) {
+        super(`RestaurantInfo/${id}/Reviews`);
+    }
+
+    getRecentData = async () => {
+        const result = await this.get([
+            orderBy('createdAt', 'desc'),
+            limit(5)
+        ]);
+        if (result.status) {
+            let data = result.data.map(async (review) => {
+                const userClass = new User();
+                const userRes = await userClass.first(review.createdBy);
+                return {
+                    ...review,
+                    user: userRes?.data || {},
+                }
+            })
+            return await Promise.all(data.map(async (i) => await i));
+        }
+        return [];
+    }
+
+    getAllData = async () => {
+        const result = await this.get([
+            orderBy('createdAt', 'desc'),
+        ]);
+        if (result.status) {
+            let data = result.data.map(async (review) => {
+                const userClass = new User();
+                const userRes = await userClass.first(review.createdBy);
+                return {
+                    ...review,
+                    user: userRes?.data || {},
+                }
+            })
+            return await Promise.all(data.map(async (i) => await i));
+        }
+        return [];
+    }
+
+}

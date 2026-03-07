@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "hot-dog-kings",
+    "production": "hot-dog-kings"
+  },
+  "targets": {},
+  "etags": {}
+}

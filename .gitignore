@@ -1,0 +1,11 @@
+# Node dependencies
+node_modules/
+
+# Laravel / PHP vendor
+vendor/
+
+# Ignore vendor folders anywhere in project
+**/vendor/
+
+# Optional: ignore node_modules anywhere
+**/node_modules/

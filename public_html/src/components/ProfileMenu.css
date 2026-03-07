@@ -1,0 +1,20 @@
+.MuiList-root {
+  width: 350px;
+}
+
+.login-btn {
+  text-decoration: none;
+  line-height: 2;
+  border: 2px solid #9c27b0;
+  padding: 0px 15px;
+  border-radius: 15px;
+  height: 35px;
+  margin-top: 4px;
+  color: #9c27b0;
+  display: flex;
+  justify-content: center;
+}
+
+.user-profile-tab {
+  width: 90%
+}

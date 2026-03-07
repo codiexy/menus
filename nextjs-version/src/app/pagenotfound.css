@@ -1,0 +1,62 @@
+/*======================
+    404 page
+=======================*/
+
+
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: 'Arvo', serif;
+}
+
+.page_404 img {
+    width: 100%;
+}
+
+.four_zero_four_bg {
+    background-image: url(https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg?w=2000);
+    height: 400px;
+    background-position: center;
+    background-size: contain;
+}
+
+.four_zero_four_bg h1 {
+    font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+.link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.contant_box_404 {
+    margin-top: -50px;
+}
+
+section.page_404 .container {
+    grid-template-columns: inherit !important;
+    margin: auto;
+    display: flex;
+}
+.four_zero_four_bg {
+    height: 450px;
+    width: 500px;
+    text-align: center;
+}
+.contant_box_404 {
+    text-align: center;
+}
+.link_404 {
+    background: #4458BE!important;
+    text-decoration: none;
+}
+.contant_box_404 {
+    margin-top: 0px !important;
+}
