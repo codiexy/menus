@@ -13,7 +13,7 @@ export default function ChooseBackground({ imageUrl }) {
     const options = {
       method: 'GET',
       url: 'https://beta-sdk.photoroom.com/v1/render',
-      headers: { 'Content-Type': 'application/json', 'x-api-key': 'a1de6ce39356ce11187d08ef0122b70d9cfe8306' },
+      headers: { 'Content-Type': 'application/json', 'x-api-key': 'X-API-KEY' },
       params: {
         imageUrl: "https://firebasestorage.googleapis.com/v0/b/hot-dog-kings.appspot.com/o/images%2F1697009869027cs-PhotoRoom%20(1).png?alt=media&token=434d483f-61cc-4ea7-8ce5-e7ddb6e140b1",
         templateId: "9124f52a-3512-48b7-80f1-2cb07a3607fb"
