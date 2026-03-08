@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import { Typography } from "@mui/material";
 
-const apiKey: any = 'AIzaSyCjKdnkQAnpAmK504Tp7UOETL5Jihg2JYc'; // Replace with your API key
+const apiKey: any = ''; // Replace with your API key
 
 function RestaurantMap(props: any) {
 
