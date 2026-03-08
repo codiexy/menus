@@ -15,7 +15,7 @@ const center = {
 function RestaurantMap() {
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyCSak7u_7oMyFU6K5Zrs5E_OdKW34xORzs"
+        googleMapsApiKey: "MAP_KEY"
     })
 
     const [map, setMap] = React.useState(null)
